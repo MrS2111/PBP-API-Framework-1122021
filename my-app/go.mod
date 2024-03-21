@@ -3,20 +3,21 @@ module my-app
 go 1.21.6
 
 require (
-	github.com/go-sql-driver/mysql v1.5.0
 	github.com/jinzhu/gorm v1.9.12
 	github.com/revel/modules v1.1.0
 	github.com/revel/revel v1.1.0
 )
 
+require github.com/jinzhu/inflection v1.0.0 // indirect
+
 require (
 	github.com/bradfitz/gomemcache v0.0.0-20220106215444-fb4bf637b56d // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
+	github.com/go-sql-driver/mysql v1.5.0 // indirect
 	github.com/go-stack/stack v1.8.1 // indirect
 	github.com/gomodule/redigo v1.8.8 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/inconshreveable/log15 v2.16.0+incompatible // indirect
-	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/patrickmn/go-cache v2.1.0+incompatible // indirect
