@@ -7,10 +7,10 @@ import (
 
 type User struct {
 	gorm.Model
-	Name    string `gorm:"type:varchar(100)" json:"name"`
-	Age     int64  `gorm:"type:bigint(20)" json:"age"`
-	Email   string `gorm:"type:varchar(100);unique_index" json:"email"`
-	Address string `gorm:"index:addr" json:"address"`
+	Name    string `json:"name"`
+	Age     int64  `json:"age"`
+	Email   string `json:"email"`
+	Address string `json:"address"`
 }
 
 func (user User) Validate(v *revel.Validation) {
